@@ -1,12 +1,13 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: 100vw;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		background-color: rgb(0,0,0);
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -69,11 +70,43 @@
 	}
 }
 
+/* ------------------------------------
+Bouton burger
+------------------------------------- */
+
 /* Small menu. */
+.menu-toggle{
+	padding: 0;
+	// transition: transform .25s;
+	// transform: rotate(0deg);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background: #0053ba;
+}
+
+.menu-toggle:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.menu-toggle:active {
+    transform: scale(0.99);
+}
+
+// .main-navigation.toggled .menu-toggle{
+// 	transform: rotate(90deg);
+// }
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
+
+/* -----------------------------------------------------
+Menu pour tablette
+----------------------------------------------- */
 
 @media screen and (min-width: 37.5em) {
 
@@ -83,6 +116,8 @@
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: space-around;
+		
 	}
 }
 

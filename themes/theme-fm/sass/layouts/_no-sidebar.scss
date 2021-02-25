@@ -8,4 +8,23 @@
 			"main"
 			"footer";
 	}
+
+	// .site {
+	// 	// margin: 2rem;
+	// }
+}
+
+/*
+#page .site (Conteneur de la page)
+	#masthead .site-header (entête de la page)
+		.site-branding
+			.site-title
+			.site-description
+		#site-navigation .main-navigation
+	#primary .site-main (section principale de la page)
+	#colophon .site-footer
+*/
+
+.site-branding, #primary, #colorphon{
+	margin-left: 3rem;
 }
