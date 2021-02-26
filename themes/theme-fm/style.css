@@ -1109,6 +1109,11 @@ body.home::after {
   font-size: clamp(0.5rem, -0.075rem + 8.333vw, 2rem);
 }
 
+.site-main .entry-title {
+  font-size: clamp(2rem, 3rem, 4rem);
+  text-decoration: underline;
+}
+
 .accueil ul {
   list-style-type: none;
   font-size: clamp(1.2rem, -0.075rem + 8.333vw, 2rem);
