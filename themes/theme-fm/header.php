@@ -48,9 +48,9 @@
 			if ( is_front_page()):
 		?>
 		<section class="carrousel">
-			<div>1</div>
-			<div>2</div>
-			<div>3</div>
+			<div>Le futur</div>
+			<div>C'est </div>
+			<div>Le code !!</div>
 		</section>
 		<?php endif ?>
 
