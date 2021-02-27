@@ -1062,9 +1062,15 @@ body {
 }
 
 body.home {
-  background-color: lightblue;
+  background-color: lightgreen;
   height: 100vh;
   width: 100vw;
+}
+
+@media (max-width: 800px) {
+  body.home {
+    background-color: skyblue;
+  }
 }
 
 body.home::after {
@@ -1076,14 +1082,17 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+          clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+  background-color: green;
   z-index: -1;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   body.home::after {
     -webkit-clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
             clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: darkblue;
+    background-color: blue;
   }
 }
 
@@ -1091,7 +1100,7 @@ body.home::after {
   body.home::after {
     -webkit-clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
             clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
-    background-color: gold;
+    background-color: blue;
   }
 }
 
@@ -1110,6 +1119,18 @@ body.home::after {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  .site-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .site-title {
+    font-size: 1.3rem;
+  }
+}
+
 .site-description {
   margin-top: 0;
   font-family: "Monsterrat", courier, monospace;
@@ -1117,20 +1138,35 @@ body.home::after {
   font-size: clamp(0.5rem, -0.075rem + 8.333vw, 2rem);
 }
 
+@media (max-width: 800px) {
+  .site-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .site-description {
+    font-size: 1.1rem;
+  }
+}
+
 .site-main .entry-title {
-  font-size: clamp(1rem, 2rem, 7rem);
+  font-size: clamp(1rem, 2rem, 4rem);
   text-decoration: underline;
 }
 
 @media (max-width: 425px) {
   .site-main {
     text-align: center;
+    margin-left: 30px;
+    color: black;
   }
 }
 
 @media (max-width: 425px) {
   .accueil {
     text-align: center;
+    color: black;
   }
 }
 
@@ -1145,6 +1181,19 @@ body.home::after {
 @media (max-width: 425px) {
   .accueil ul {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
