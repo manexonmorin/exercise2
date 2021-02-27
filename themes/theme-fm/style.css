@@ -1087,6 +1087,14 @@ body.home::after {
   }
 }
 
+@media (max-width: 425px) {
+  body.home::after {
+    -webkit-clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
+            clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
+    background-color: gold;
+  }
+}
+
 .home #primary {
   width: 100vw;
 }
@@ -1110,8 +1118,20 @@ body.home::after {
 }
 
 .site-main .entry-title {
-  font-size: clamp(2rem, 3rem, 4rem);
+  font-size: clamp(1rem, 2rem, 7rem);
   text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  .site-main {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .accueil {
+    text-align: center;
+  }
 }
 
 .accueil ul {
@@ -1120,6 +1140,12 @@ body.home::after {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 425px) {
+  .accueil ul {
+    text-align: center;
+  }
 }
 
 .accueil img {

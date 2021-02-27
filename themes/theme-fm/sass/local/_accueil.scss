@@ -22,6 +22,11 @@ body.home::after{
         background-color: darkblue;
     }
     z-index: -1;
+
+    @include phone{
+        clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
+        background-color: gold;
+    }
 }
 
 .home{
@@ -50,12 +55,20 @@ body.home::after{
 
 .site-main{
     .entry-title{
-        font-size: clamp(2rem, 3rem, 4rem);
+        font-size: clamp(1rem, 2rem, 7rem);
         text-decoration: underline;
+    }
+    
+    @include phone{
+        text-align: center;
     }
 }
 
 .accueil{
+
+    @include phone{
+        text-align: center;
+    }
 
     ul{
         list-style-type: none;
@@ -63,6 +76,10 @@ body.home::after{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 0px;
+
+        @include phone{
+            text-align: center;
+        }
     }
 
     img{
