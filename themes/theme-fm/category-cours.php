@@ -23,24 +23,26 @@ get_header();
 
 			<?php
 			/* Start the Loop */
+            $precedent = 0;
 			while ( have_posts() ) :
 				the_post();
+                $titre = get_the_title();
+                $session = substr($titre, 4, 1);
+                $contenu = get_the_content();
+                $resume = substr($contenu, 0, 200);
+                
+            ?>
+                <?php
+                    if($session != $precedent){
+                        echo "<p>Session : " .$session . "</p>";
+                    }
+                    $precedent = $session;
+                ?>
+                <p> <?php  echo $session . "-" . $titre; ?> </p> 
+                <p> <?php echo $resume; ?> </p>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
+            <?php
 			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
 		endif;
 		?>
 
