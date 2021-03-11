@@ -749,6 +749,22 @@ textarea {
   position: relative;
 }
 
+.main-navigation ul a[href='#']::after {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  content: "+";
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  right: 0;
+}
+
+.main-navigation ul li.focus a[href='#']::after,
+.main-navigation ul a[href='#']:hover::after {
+  content: "-";
+}
+
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -804,9 +820,14 @@ menu tablet
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .main-navigation.toggled ul a[href='#']::after,
+  .main-navigation ul a[href='#']::after {
+    display: none;
+  }
   .main-navigation.toggled ul li:hover ul,
   .main-navigation ul li:hover ul {
     display: block;
+    position: absolute;
     width: 400px;
     height: 500px;
   }
