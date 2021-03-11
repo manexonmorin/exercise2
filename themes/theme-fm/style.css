@@ -704,10 +704,14 @@ textarea {
 
 .main-navigation ul {
   display: none;
+  position: absolute;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: black;
+  background-color: #000;
+  text-align: left;
+  /*fin du sub menu*/
 }
 
 .main-navigation ul ul {
@@ -716,50 +720,52 @@ textarea {
   float: left;
   position: absolute;
   top: 100%;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
   left: -999em;
   z-index: 99999;
+  /*
+			ul {
+				left: -999em;
+				top: 0;
+			}
+*/
 }
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
+.main-navigation ul ul li a {
+  padding-left: 20px;
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: 100%;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 0;
 }
 
-.main-navigation li {
+.main-navigation ul li {
   position: relative;
 }
 
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: .5rem;
 }
 
-/* ------------------------------------
-Bouton burger
-------------------------------------- */
-/* Small menu. */
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
 .menu-toggle {
   padding: 0;
+  border: 0;
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background: #0053ba;
+  background: #fafbfc;
 }
 
 .menu-toggle:focus {
@@ -772,41 +778,41 @@ Bouton burger
           transform: scale(0.99);
 }
 
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
+}
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
-.menu-toggle li a[href='#']::after,
-.main-navigation.toggled ul li a[href='#']::after {
-  position: absolute;
-  content: "\2B9E";
-  width: 100%;
-  height: 100%;
-  top: 25%;
-  bottom: 0;
-  left: 95%;
-  right: 0;
-}
-
-.menu-toggle li.focus a [href='#']::after,
-.main-navigation.toggled ul li.focus a [href='#']::after {
-  content: "\2B9F";
-}
-
-/* -----------------------------------------------------
-Menu pour tablette
------------------------------------------------ */
+/* ---------------------------------------------------------------------------
+menu tablet
+------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: static;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: block;
+    width: 400px;
+    height: 500px;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    display: none;
   }
 }
 
