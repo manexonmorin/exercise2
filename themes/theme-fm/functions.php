@@ -192,6 +192,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*Exemple en classes.
 function extraire_cours($query){
 	if($query-> is_category('cours'))
 	{
@@ -202,3 +203,16 @@ function extraire_cours($query){
 }
 
 add_action('pre_get_posts', 'extraire_cours');
+*/
+
+// le code que le prof veut qu'on intègre
+function extraire_cours_front_page($query){
+	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
+
+	$query->set( 'category_name', 'cours' );
+	$query->set('posts_per_page', -1 );
+	$query->set('orderby', 'title');
+	$query->set('order', 'asc');
+}
+}
+add_action('pre_get_posts','extraire_cours_front_page');
