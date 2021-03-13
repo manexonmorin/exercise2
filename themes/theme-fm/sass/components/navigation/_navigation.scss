@@ -108,6 +108,17 @@ Bouton burger
 .main-navigation.toggled ul {
 	display: block;
 }
+
+.sub-menu{
+	li{
+		border: solid 1px black;
+		background-color: white;
+	}
+
+	li:hover{
+		font-weight: bolder;
+	}
+}
 /* ---------------------------------------------------------------------------
 menu tablet
 ------------------------------------------------------------------------------ */

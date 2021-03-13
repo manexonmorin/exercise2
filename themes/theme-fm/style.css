@@ -555,7 +555,7 @@ a:hover, a:active {
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-  color: #ffffff;
+  color: #d12121;
 }
 
 .main-navigation a:focus {
@@ -802,6 +802,15 @@ Bouton burger
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+}
+
+.sub-menu li {
+  border: solid 1px black;
+  background-color: white;
+}
+
+.sub-menu li:hover {
+  font-weight: bolder;
 }
 
 /* ---------------------------------------------------------------------------
