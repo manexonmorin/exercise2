@@ -9,17 +9,51 @@
 
 get_header();
 ?>
-		<section class="carrousel">
-			<div>Le futur</div>
-			<div>C'est </div>
-			<div>Le code !!</div>
+	<main id="primary" class="site-main">
+	<section class="carrousel">
+			<article class="slide__conteneur">
+				<div class="slide">
+					
+					<img width="150" height="84" src="http://localhost/4w4/wp-content/uploads/2021/03/Python-Basics-Chapter-on-Web-Scraping_Watermarked.ad1bb89e800b.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+					<div class="slide__info">
+					<p>582-3W3 - Web-90h</p>
+					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
+					<p>Session : 3</p>
+					
+					</div>
+				</div>
+			</article>
+
+			<article class="slide__conteneur">
+				<div class="slide">
+					
+					<img src="" alt="">
+					<div class="slide__info">
+					<p>582-3W3 - Web-90h</p>
+					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
+					<p>Session : 3</p>
+					
+					</div>
+				</div>
+			</article>
+			
+			<article class="slide__conteneur">
+				<div class="slide">
+					
+					<img src="" alt="">
+					<div class="slide__info">
+					<p>582-3W3 - Web-90h</p>
+					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
+					<p>Session : 3</p>
+					
+					</div>
+				</div>
+			</article>
 		</section>
 
 		<button id="un">1</button>
 		<button id="deux">2</button>
 		<button id="trois">3</button>
-
-	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
