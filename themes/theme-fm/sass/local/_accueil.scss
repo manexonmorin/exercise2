@@ -122,3 +122,51 @@ body.home::after{
         width: 370px;
     }
 }
+
+.home .cours{
+    display: flex;
+    flex-direction: column;
+
+    section{
+        // width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            width: 90%;
+            background-color: lightgrey;
+    
+            p{
+                margin: .3rem;
+                font-size: 1rem;
+            }
+    
+            a{
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+
+        @include tablet{
+            article{
+                width: 45%;
+                margin: 1%;
+            }
+        }
+
+        @include desktop{
+            article{
+                width: 29%;
+                margin: 1%;
+            }
+        }
+    }
+
+}
