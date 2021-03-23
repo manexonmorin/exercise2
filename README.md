@@ -1,3 +1,8 @@
+Titre: Tp1 Conception d'interface et développement web
+Auteur: Morin, François Marie Manexon
+groupe: Gr-2
+
+
 ---------------------------- EXERCICE #2-----------------------------------
 Alors, j'ai beaucoup travailler sur l'exercise 2. 
 Les choses que je suis fière d'avoir fait sont les différents clip-paths pour chaque version. Les clip-paths sont différent au fur et à mesure qu'on réduit ou grossit la page.
@@ -10,9 +15,11 @@ https://manexonmorin.github.io/exercise2/
 N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html après le dernier « / » alors c'est comme ceci
 https://manexonmorin.github.io/exercise2/index.html
 
+
 ////////////////////////////////////////////////////////////////////////////
 /* ---------------------------------------------------------------------- */
 ////////////////////////////////////////////////////////////////////////////
+
 
 -------------------------------LABO #4---------------------------------
 Dans ce labo-ci, j'ai ajouté une flèche à la fin des différentes section du menu.
@@ -25,3 +32,15 @@ https://manexonmorin.github.io/lab4-tp1/
 ----------------------------------------------------------------------- */
 N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html après le dernier « / » alors c'est comme ceci
 https://manexonmorin.github.io/lab4-tp1/index.html
+
+
+////////////////////////////////////////////////////////////////////////////
+/* ---------------------------------------------------------------------- */
+////////////////////////////////////////////////////////////////////////////
+
+
+----------------------------------TP-1--------------------------------------
+Dans ce Tp, j'ai fait en sorte de placer de façon dynamique les cours qui sont affiché dans la page d'accueil.
+J'ai modifier quelque couleurs.
+j'ai fait en sorte que les boutons du slider se retrouve au milieu de la page. Afin de modifier son aspect estétique.
+J'ai enelever les chiffres qui étaient sur ces boutons et je les ai remplacer par un conteneur vide.
