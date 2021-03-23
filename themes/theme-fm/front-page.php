@@ -10,7 +10,7 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
-	<section class="carrousel">
+	<!-- <section class="carrousel">
 			<article class="slide__conteneur">
 				<div class="slide">
 					
@@ -49,11 +49,11 @@ get_header();
 					</div>
 				</div>
 			</article>
-		</section>
+		</section> -->
 
-		<button id="un">1</button>
+		<!-- <button id="un">1</button>
 		<button id="deux">2</button>
-		<button id="trois">3</button>
+		<button id="trois">3</button> -->
 
 		<?php if ( have_posts() ) : ?>
 

@@ -47,17 +47,17 @@
 		<?php 
 			if ( is_front_page()):
 		?>
-		<!-- <section class="carrousel">
+		<section class="carrousel">
 			<div>Le futur</div>
 			<div>C'est </div>
 			<div>Le code !!</div>
-		</section> -->
+		</section>
 		<?php endif ?>
-
-		<!-- <button id="un">1</button>
-		<button id="deux">2</button>
-		<button id="trois">3</button> -->
-
+		<div class="boutton">
+			<button id="un"></button>
+			<button id="deux"></button>
+			<button id="trois"></button>
+		</div>
 		<nav id="site-navigation" class="main-navigation">
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=2816ac" width="32" height="32"></button> -->
 			<button id="burger" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
