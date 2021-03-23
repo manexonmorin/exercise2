@@ -100,8 +100,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -131,8 +130,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -229,9 +227,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -239,9 +237,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -250,9 +248,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -270,8 +268,7 @@ fieldset {
  *		`fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -297,18 +294,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   padding: 0;
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -316,7 +312,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -324,7 +320,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -376,13 +372,11 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
@@ -529,19 +523,15 @@ table {
 a {
   color: #4169e1;
 }
-
 a:visited {
   color: #800080;
 }
-
 a:hover, a:focus, a:active {
   color: #191970;
 }
-
 a:focus {
   outline: thin dotted;
 }
-
 a:hover, a:active {
   outline: 0;
 }
@@ -549,19 +539,15 @@ a:hover, a:active {
 .main-navigation a {
   color: #000000;
 }
-
 .main-navigation a:visited {
   color: #000000;
 }
-
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
   color: #d12121;
 }
-
 .main-navigation a:focus {
   outline: thin dotted;
 }
-
 .main-navigation a:hover, .main-navigation a:active {
   outline: 0;
 }
@@ -569,19 +555,15 @@ a:hover, a:active {
 .site-title a {
   color: #e814e1;
 }
-
 .site-title a:visited {
   color: #250697;
 }
-
 .site-title a:hover, .site-title a:focus, .site-title a:active {
   color: #35da14;
 }
-
 .site-title a:focus {
   outline: thin dotted;
 }
-
 .site-title a:hover, .site-title a:active {
   outline: 0;
 }
@@ -589,9 +571,9 @@ a:hover, a:active {
 /* Forms
 --------------------------------------------- */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -600,61 +582,58 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
-
 button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
   border-color: #ccc #bbb #aaa;
 }
-
 button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
 textarea:focus {
   color: #111;
 }
@@ -671,11 +650,9 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .no-sidebar .site {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-      grid-template-areas: "header" "main" "footer";
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 /*
@@ -701,7 +678,6 @@ textarea {
   display: block;
   width: 100vw;
 }
-
 .main-navigation ul {
   display: none;
   position: absolute;
@@ -713,64 +689,53 @@ textarea {
   text-align: left;
   /*fin du sub menu*/
 }
-
 .main-navigation ul ul {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
-  -webkit-transition: left 0.5s;
   transition: left 0.5s;
   left: -999em;
   z-index: 99999;
   /*
-			ul {
-				left: -999em;
-				top: 0;
-			}
-*/
+  			ul {
+  				left: -999em;
+  				top: 0;
+  			}
+  */
 }
-
 .main-navigation ul ul li a {
   padding-left: 20px;
 }
-
 .main-navigation ul ul a {
   width: 100%;
 }
-
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: 0;
 }
-
 .main-navigation ul li {
   position: relative;
 }
-
-.main-navigation ul a[href='#']::after {
+.main-navigation ul a[href="#"]::after {
   position: absolute;
   width: 100%;
   height: 200%;
-  content: "\25B6";
+  content: "▶";
   top: 0;
   bottom: 0;
   left: 90%;
   right: 0;
 }
-
-.main-navigation ul li.focus a[href='#']::after,
-.main-navigation ul a[href='#']:hover::after {
-  content: "\25BC";
+.main-navigation ul li.focus a[href="#"]::after,
+.main-navigation ul a[href="#"]:hover::after {
+  content: "▼";
 }
-
 .main-navigation a {
   display: block;
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 /* -----------------------------------------------------------------------------
 Bouton burger 
 ------------------------------------------------------------------------------*/
@@ -790,8 +755,7 @@ Bouton burger
 }
 
 .menu-toggle:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 /*
@@ -808,7 +772,6 @@ Bouton burger
   border: solid 1px black;
   background-color: white;
 }
-
 .sub-menu li:hover {
   font-weight: bolder;
 }
@@ -820,57 +783,45 @@ menu tablet
   .menu-toggle {
     display: none;
   }
+
   .main-navigation.toggled ul,
-  .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.main-navigation ul {
     display: flex;
     position: static;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .main-navigation.toggled ul li:hover ul,
-  .main-navigation ul li:hover ul {
+.main-navigation ul li:hover ul {
     display: block;
     position: absolute;
     width: 400px;
     height: 500px;
   }
   .main-navigation.toggled ul ul,
-  .main-navigation ul ul {
+.main-navigation ul ul {
     display: none;
   }
 }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
   margin: 0 0 1.5em;
 }
-
 .comment-navigation .nav-links,
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  flex: 1 0 50%;
 }
-
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   text-align: end;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  flex: 1 0 50%;
 }
 
 /* Posts and pages
@@ -914,7 +865,6 @@ menu tablet
 .widget {
   margin: 0 0 1.5em;
 }
-
 .widget select {
   max-width: 100%;
 }
@@ -941,13 +891,11 @@ menu tablet
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-
-.wp-caption img[class*="wp-image-"] {
+.wp-caption img[class*=wp-image-] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
@@ -960,7 +908,6 @@ menu tablet
 --------------------------------------------- */
 .gallery {
   margin-bottom: 1.5em;
-  display: -ms-grid;
   display: grid;
   grid-gap: 1.5em;
 }
@@ -972,43 +919,35 @@ menu tablet
 }
 
 .gallery-columns-2 {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-columns-3 {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery-columns-4 {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-columns-5 {
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery-columns-6 {
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .gallery-columns-7 {
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .gallery-columns-8 {
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .gallery-columns-9 {
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .gallery-caption {
@@ -1040,8 +979,7 @@ menu tablet
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -1050,15 +988,12 @@ menu tablet
   width: 1px;
   word-wrap: normal !important;
 }
-
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -1110,15 +1045,20 @@ body {
   overflow-x: hidden;
 }
 
+/*bonjour*/
 body.home {
-  background-color: lightgreen;
-  height: 100vh;
+  background-color: skyblue;
+  height: 500vh;
   width: 100vw;
 }
-
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   body.home {
-    background-color: skyblue;
+    background-color: forestgreen;
+  }
+}
+@media (min-width: 1200px) {
+  body.home {
+    background-color: forestgreen;
   }
 }
 
@@ -1126,35 +1066,29 @@ body.home::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 200%;
+  height: 500vh;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-          clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-  background-color: green;
   z-index: -1;
 }
-
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   body.home::after {
-    -webkit-clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-            clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
     background-color: blue;
   }
 }
-
-@media (max-width: 425px) {
+@media (min-width: 1200px) {
   body.home::after {
-    -webkit-clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
-            clip-path: polygon(50% 0, 60% 50%, 100% 50%, 60% 65%, 100% 100%, 50% 75%, 0 100%, 40% 65%, 0 50%, 40% 50%);
-    background-color: blue;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+    background-color: honeydew;
   }
 }
 
 .home #primary {
   width: 100vw;
+  margin: 1%;
 }
 
 .site-title {
@@ -1163,18 +1097,15 @@ body.home::after {
   font-size: clamp(1.2rem, -0.075rem + 8.333vw, 3rem);
   margin-bottom: 0;
 }
-
 .site-title a {
   text-decoration: none;
 }
-
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .site-title {
     font-size: 2.5rem;
   }
 }
-
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .site-title {
     font-size: 1.3rem;
   }
@@ -1186,14 +1117,12 @@ body.home::after {
   font-weight: normal;
   font-size: clamp(0.5rem, -0.075rem + 8.333vw, 2rem);
 }
-
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .site-description {
     font-size: 1.5rem;
   }
 }
-
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .site-description {
     font-size: 1.1rem;
   }
@@ -1203,8 +1132,7 @@ body.home::after {
   font-size: clamp(1rem, 2rem, 4rem);
   text-decoration: underline;
 }
-
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .site-main {
     text-align: center;
     margin-left: 30px;
@@ -1212,13 +1140,12 @@ body.home::after {
   }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .accueil {
     text-align: center;
     color: black;
   }
 }
-
 .accueil ul {
   list-style-type: none;
   font-size: clamp(1.2rem, -0.075rem + 8.333vw, 2rem);
@@ -1226,26 +1153,15 @@ body.home::after {
   margin-right: 0px;
   margin-bottom: 0px;
 }
-
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .accueil ul {
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
-
 .accueil img {
   display: block;
   border-radius: 50%;
@@ -1253,53 +1169,147 @@ body.home::after {
   width: 370px;
 }
 
+/* --------------------------------------------------------------------------
+Listes des blocs par type de cours
+--------------------------------------------------------------------------- */
+.home .cours {
+  display: flex;
+  flex-direction: column;
+}
+.home .cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home .cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 90%;
+  margin: 1%;
+  background-color: lightgrey;
+}
+.home .cours section article p {
+  margin: 0.3rem;
+  font-size: 1rem;
+}
+.home .cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  .home .cours section article {
+    width: 45%;
+    margin: 1%;
+  }
+}
+@media (min-width: 1200px) {
+  .home .cours section article {
+    width: 29%;
+    margin: 1%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+Couleur du menu hambureger déroulant
+--------------------------------------------------------------------------- */
+#primary-menu {
+  background-color: white;
+}
+
 /* carrousel
 ---------------------------------------- */
 .carrousel {
   width: 300vw;
   height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transition: transform 0.5s;
+  transform: translateX(0);
 }
-
 .carrousel div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   font-size: 3rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .carrousel div:nth-of-type(1) {
   background-color: red;
-  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-          clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
-
 .carrousel div:nth-of-type(2) {
   background-color: lime;
-  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-          clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
-
 .carrousel div:nth-of-type(3) {
   background-color: blue;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.boutton {
+  display: flex;
+  width: 100vw;
+  margin: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* slider
+---------------------------------------- */
+.carrousel {
+  width: 300vw;
+  height: 20vh;
+  display: flex;
+  transition: transform 0.5s;
+  transform: translateX(0);
+}
+.carrousel .slide__conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.carrousel .slide__conteneur .slide {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (min-width: 800px) {
+  .carrousel .slide__conteneur .slide {
+    width: 60%;
+  }
+}
+.carrousel .slide__conteneur .slide img {
+  display: block;
+  margin: 2%;
+}
+.carrousel .slide__conteneur .slide .slide__info {
+  display: flex;
+  flex-direction: column;
+}
+.carrousel .slide__conteneur .slide .slide__info p {
+  font-size: 0.8rem;
+}
+.carrousel .slide__conteneur .slide .slide__info a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.carrousel .slide__conteneur .slide:nth-of-type(1) {
+  background-color: red;
+}
+.carrousel .slide__conteneur .slide:nth-of-type(2) {
+  background-color: lime;
+}
+.carrousel .slide__conteneur .slide:nth-of-type(3) {
+  background-color: blue;
 }
 
 /* Burger
@@ -1317,7 +1327,6 @@ Le bouton buger
   border-radius: 50%;
   overflow: hidden;
 }
-
 #burger div {
   top: 0;
   left: 0;
@@ -1325,190 +1334,96 @@ Le bouton buger
   width: 100%;
   height: 100%;
 }
-
 #burger div:nth-of-type(1) {
   background-color: #3ddada;
-  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-          clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+  clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
-
 #burger div:nth-of-type(2) {
   background-color: #3d79da;
-  -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-          clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
-
 #burger div:nth-of-type(3) {
   background-color: #dab03d;
-  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-          clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
 /* -----------------------------------------------------------------------------------
 La barre du haut
 -------------------------------------------------------------------------------------- */
-@-webkit-keyframes ouvreX1 {
-  0% {
-    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-            clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-  }
-  100% {
-    -webkit-clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-            clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-  }
-}
 @keyframes ouvreX1 {
   0% {
-    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-            clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
   }
   100% {
-    -webkit-clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-            clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
   }
 }
-
-@-webkit-keyframes fermeX1 {
-  0% {
-    -webkit-clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-            clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-            clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-  }
-}
-
 @keyframes fermeX1 {
   0% {
-    -webkit-clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-            clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
   }
   100% {
-    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-            clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
   }
 }
-
 .ouvreX1 {
-  -webkit-animation: ouvreX1 0.1s both;
-          animation: ouvreX1 0.1s both;
+  animation: ouvreX1 0.1s both;
 }
 
 .fermeX1 {
-  -webkit-animation: fermeX1 0.1s both;
-          animation: fermeX1 0.1s both;
+  animation: fermeX1 0.1s both;
 }
 
 /* -----------------------------------------------------------------------------------
 La barre du bas
 -------------------------------------------------------------------------------------- */
-@-webkit-keyframes ouvreX3 {
-  0% {
-    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-  }
-  100% {
-    -webkit-clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
-            clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
-  }
-}
 @keyframes ouvreX3 {
   0% {
-    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
   }
   100% {
-    -webkit-clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
-            clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
+    clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
   }
 }
-
-@-webkit-keyframes fermeX3 {
-  0% {
-    -webkit-clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
-            clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-  }
-}
-
 @keyframes fermeX3 {
   0% {
-    -webkit-clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
-            clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
+    clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
   }
   100% {
-    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
   }
 }
-
 .ouvreX3 {
-  -webkit-animation: ouvreX3 0.1s both;
-          animation: ouvreX3 0.1s both;
+  animation: ouvreX3 0.1s both;
 }
 
 .fermeX3 {
-  -webkit-animation: fermeX3 0.1s both;
-          animation: fermeX3 0.1s both;
+  animation: fermeX3 0.1s both;
 }
 
 /* -----------------------------------------------------------------------------------
 La barre du millieu
 -------------------------------------------------------------------------------------- */
-@-webkit-keyframes ouvreX2 {
-  0% {
-    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-            clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  }
-  100% {
-    -webkit-clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-            clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-  }
-}
 @keyframes ouvreX2 {
   0% {
-    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-            clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
   }
   100% {
-    -webkit-clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-            clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
   }
 }
-
-@-webkit-keyframes fermeX2 {
-  0% {
-    -webkit-clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-            clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-            clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  }
-}
-
 @keyframes fermeX2 {
   0% {
-    -webkit-clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-            clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
   }
   100% {
-    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-            clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
   }
 }
-
 .ouvreX2 {
-  -webkit-animation: ouvreX2 0.1s both;
-          animation: ouvreX2 0.1s both;
+  animation: ouvreX2 0.1s both;
 }
 
 .fermeX2 {
-  -webkit-animation: fermeX2 0.1s both;
-          animation: fermeX2 0.1s both;
-}
-/*# sourceMappingURL=style.css.map */
+  animation: fermeX2 0.1s both;
+}/*# sourceMappingURL=style.css.map */
