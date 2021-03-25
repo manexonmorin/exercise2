@@ -10,6 +10,7 @@ global $tPropriété;
 ?>
 	<!-- <?php //the_post_thumbnail('medium_large'); ?> -->
 <article>
+	
 	<p><?php echo $tPropriété['sigle'] . " - " . $tPropriété['typeCours'] . "-" . $tPropriété['nbHeure']; ?></p>
 	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['titrePartiel']; ?></a>
 	<p>Session : <?php echo $tPropriété['session']; ?></p>

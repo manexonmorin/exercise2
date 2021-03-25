@@ -46,9 +46,9 @@ j'ai fait en sorte que les boutons du slider se retrouve au milieu de la page. A
 J'ai enelever les chiffres qui étaient sur ces boutons et je les ai remplacer par un conteneur vide.
 
 /* ---------------------Adresse git hub LABO 4------------------------- 
-https://manexonmorin.github.io/lab4-tp1/
+https://manexonmorin.github.io/tp1/
 ----------------------------------------------------------------------- */
 N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html après le dernier « / » alors c'est comme ceci
-https://manexonmorin.github.io/lab4-tp1/index.html
+https://manexonmorin.github.io/tp1/index.html
 
 P.S: je ne sais pas pourquoi, mais le lien de mon gitHub pages n'affiche pas la page WP que j'ai modifié

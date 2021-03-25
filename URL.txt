@@ -1,0 +1,13 @@
+---------------------- LIENS VERS MES PAGES GITHUB ET GITHUB PAGES---------------------------
+
+-_-:MON DÉPOT GITHUB
+https://github.com/manexonmorin/tp1
+
+-_-:MA PAGE GITHUB PAGES
+https://manexonmorin.github.io/tp1/
+
+ou
+
+https://manexonmorin.github.io/tp1/index.html
+
+P.S: le lien vers mon github pages affiche mon dernier dépôt et je ne sais pas pourquoi.

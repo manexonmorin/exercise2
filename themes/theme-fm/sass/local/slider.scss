@@ -1,4 +1,4 @@
-.carrousel{
+.carrousel-2{
     width: 300vw;
     height: 20vh;
     display: flex;
@@ -60,5 +60,17 @@
                 // clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
             }
         }
+    }
+}
+
+.ctrl-carrousel{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    
+    .rad-carrousel{
+        display: block;
+        margin: .5rem 2rem .5rem 2rem;
     }
 }

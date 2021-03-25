@@ -10,7 +10,7 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
-	<!-- <section class="carrousel">
+	<section class="carrousel-2">
 			<article class="slide__conteneur">
 				<div class="slide">
 					
@@ -49,8 +49,13 @@ get_header();
 					</div>
 				</div>
 			</article>
-		</section> -->
+		</section> 
 
+		<section class="ctrl-carrousel">
+			<input class="rad-carrousel" type="radio" name="rad-carrousel">
+			<input class="rad-carrousel" type="radio" name="rad-carrousel">
+			<input class="rad-carrousel" type="radio" name="rad-carrousel">
+		</section>
 		<!-- <button id="un">1</button>
 		<button id="deux">2</button>
 		<button id="trois">3</button> -->
