@@ -18,14 +18,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-content: center;
+            align-items: center;
 
             @include tablet{
                 &{
                     width: 60%;
                 }
             }
-
+ 
             img{
                 display: block;
                 margin: 2%;
