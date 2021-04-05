@@ -1071,19 +1071,18 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
+  /* 
+  @include tablet{
+      clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+      background-color: blue;
+  }
+
+  @include desktop{
+      clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+      background-color: rgb(240,255,240);
+  }
+  */
   z-index: -1;
-}
-@media (min-width: 800px) {
-  body.home::after {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: blue;
-  }
-}
-@media (min-width: 1200px) {
-  body.home::after {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: honeydew;
-  }
 }
 
 .home #primary {
@@ -1099,6 +1098,9 @@ body.home::after {
 }
 .site-title a {
   text-decoration: none;
+  color: violet;
+  font-weight: bold;
+  font-style: italic;
 }
 @media (min-width: 800px) {
   .site-title {
@@ -1116,6 +1118,8 @@ body.home::after {
   font-family: "Monsterrat", courier, monospace;
   font-weight: normal;
   font-size: clamp(0.5rem, -0.075rem + 8.333vw, 2rem);
+  color: white;
+  font-weight: bold;
 }
 @media (min-width: 800px) {
   .site-description {
@@ -1175,6 +1179,7 @@ Listes des blocs par type de cours
 .home .cours {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 .home .cours section {
   display: flex;
@@ -1218,11 +1223,23 @@ Listes des blocs par type de cours
   color: white;
 }
 
+.page-title {
+  color: white;
+  display: none;
+}
+
 /* --------------------------------------------------------------------------
 Couleur du menu hambureger déroulant
 --------------------------------------------------------------------------- */
 #primary-menu {
   background-color: white;
+}
+
+/* --------------------------------------------------------------------------
+Hors de la page d'acceuil
+--------------------------------------------------------------------------- */
+.entry-content p {
+  color: white;
 }
 
 /* carrousel

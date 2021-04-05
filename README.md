@@ -45,10 +45,17 @@ J'ai modifier quelque couleurs.
 j'ai fait en sorte que les boutons du slider se retrouve au milieu de la page. Afin de modifier son aspect estétique.
 J'ai enelever les chiffres qui étaient sur ces boutons et je les ai remplacer par un conteneur vide.
 
-/* ---------------------Adresse git hub LABO 4------------------------- 
-https://manexonmorin.github.io/tp1/
+////////////////////////////////////////////////////////////////////////////
+/* ---------------------------------------------------------------------- */
+////////////////////////////////////////////////////////////////////////////
+
+----------------------------------LABO #6--------------------------------------
+J'ai modifié le fond d'écran de ma page. Ainsi que le titre et le sous titre.
+J'ai enlevé le clip-path car, je trouvais que c'était un peu redondant.
+J'ai mis des images selon chaque type de cours qu'on a en fonction de web, jeu, animation 3d, etc.
+
+/* ---------------------Adresse git hub LABO 6------------------------- 
+https://manexonmorin.github.io/labo-6/
 ----------------------------------------------------------------------- */
 N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html après le dernier « / » alors c'est comme ceci
-https://manexonmorin.github.io/tp1/index.html
-
-P.S: je ne sais pas pourquoi, mais le lien de mon gitHub pages n'affiche pas la page WP que j'ai modifié
+https://manexonmorin.github.io/labo-6/index.html

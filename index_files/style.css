@@ -1053,7 +1053,7 @@ body.home {
 }
 @media (min-width: 800px) {
   body.home {
-    background-color: forestgreen;
+    background-color: #13f313;
   }
 }
 @media (min-width: 1200px) {
@@ -1071,19 +1071,18 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
+  /* 
+  @include tablet{
+      clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+      background-color: blue;
+  }
+
+  @include desktop{
+      clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+      background-color: rgb(240,255,240);
+  }
+  */
   z-index: -1;
-}
-@media (min-width: 800px) {
-  body.home::after {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: blue;
-  }
-}
-@media (min-width: 1200px) {
-  body.home::after {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: honeydew;
-  }
 }
 
 .home #primary {
@@ -1099,6 +1098,9 @@ body.home::after {
 }
 .site-title a {
   text-decoration: none;
+  color: violet;
+  font-weight: bold;
+  font-style: italic;
 }
 @media (min-width: 800px) {
   .site-title {
@@ -1116,6 +1118,8 @@ body.home::after {
   font-family: "Monsterrat", courier, monospace;
   font-weight: normal;
   font-size: clamp(0.5rem, -0.075rem + 8.333vw, 2rem);
+  color: white;
+  font-weight: bold;
 }
 @media (min-width: 800px) {
   .site-description {
@@ -1175,6 +1179,7 @@ Listes des blocs par type de cours
 .home .cours {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 .home .cours section {
   display: flex;
@@ -1189,11 +1194,12 @@ Listes des blocs par type de cours
   border: 1px solid black;
   width: 90%;
   margin: 1%;
-  background-color: lightgrey;
+  background-color: darkblue;
 }
 .home .cours section article p {
   margin: 0.3rem;
   font-size: 1rem;
+  color: white;
 }
 .home .cours section article a {
   font-size: 2rem;
@@ -1213,11 +1219,27 @@ Listes des blocs par type de cours
   }
 }
 
+.slide__info p {
+  color: white;
+}
+
+.page-title {
+  color: white;
+  display: none;
+}
+
 /* --------------------------------------------------------------------------
 Couleur du menu hambureger déroulant
 --------------------------------------------------------------------------- */
 #primary-menu {
   background-color: white;
+}
+
+/* --------------------------------------------------------------------------
+Hors de la page d'acceuil
+--------------------------------------------------------------------------- */
+.entry-content p {
+  color: white;
 }
 
 /* carrousel
@@ -1239,15 +1261,12 @@ Couleur du menu hambureger déroulant
 }
 .carrousel div:nth-of-type(1) {
   background-color: red;
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 .carrousel div:nth-of-type(2) {
   background-color: lime;
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 .carrousel div:nth-of-type(3) {
   background-color: blue;
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 
 .boutton {
@@ -1260,14 +1279,14 @@ Couleur du menu hambureger déroulant
 
 /* slider
 ---------------------------------------- */
-.carrousel {
+.carrousel-2 {
   width: 300vw;
   height: 20vh;
   display: flex;
   transition: transform 0.5s;
   transform: translateX(0);
 }
-.carrousel .slide__conteneur {
+.carrousel-2 .slide__conteneur {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1275,41 +1294,52 @@ Couleur du menu hambureger déroulant
   font-size: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.carrousel .slide__conteneur .slide {
+.carrousel-2 .slide__conteneur .slide {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 @media (min-width: 800px) {
-  .carrousel .slide__conteneur .slide {
+  .carrousel-2 .slide__conteneur .slide {
     width: 60%;
   }
 }
-.carrousel .slide__conteneur .slide img {
+.carrousel-2 .slide__conteneur .slide img {
   display: block;
   margin: 2%;
 }
-.carrousel .slide__conteneur .slide .slide__info {
+.carrousel-2 .slide__conteneur .slide .slide__info {
   display: flex;
   flex-direction: column;
 }
-.carrousel .slide__conteneur .slide .slide__info p {
+.carrousel-2 .slide__conteneur .slide .slide__info p {
   font-size: 0.8rem;
 }
-.carrousel .slide__conteneur .slide .slide__info a {
+.carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: 1.2rem;
   text-decoration: none;
 }
-.carrousel .slide__conteneur .slide:nth-of-type(1) {
+.carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
   background-color: red;
 }
-.carrousel .slide__conteneur .slide:nth-of-type(2) {
+.carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
   background-color: lime;
 }
-.carrousel .slide__conteneur .slide:nth-of-type(3) {
+.carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
   background-color: blue;
+}
+
+.ctrl-carrousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+}
+.ctrl-carrousel .rad-carrousel {
+  display: block;
+  margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
 /* Burger
