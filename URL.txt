@@ -1,13 +1,14 @@
----------------------- LIENS VERS MES PAGES GITHUB ET GITHUB PAGES---------------------------
+---------------------- LIENS VERS MES PAGES GITHUB ET GITHUB PAGES ET WEBDEV---------------------------
 
 -_-:MON DÉPOT GITHUB
 https://github.com/manexonmorin/tp1
 
 -_-:MA PAGE GITHUB PAGES
-https://manexonmorin.github.io/tp1/
+https://manexonmorin.github.io/labo-6/
 
 ou
 
-https://manexonmorin.github.io/tp1/index.html
+https://manexonmorin.github.io/labo-6/index.html
+https://e1937021.webdev.cmaisonneuve.qc.ca/4w4/
 
-P.S: le lien vers mon github pages affiche mon dernier dépôt et je ne sais pas pourquoi.
+P.S. Il faut que je vous parle en ce qui concerne mon webdev.
