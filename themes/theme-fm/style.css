@@ -1053,7 +1053,7 @@ body.home {
 }
 @media (min-width: 800px) {
   body.home {
-    background-color: forestgreen;
+    background-color: #13f313;
   }
 }
 @media (min-width: 1200px) {
@@ -1189,11 +1189,12 @@ Listes des blocs par type de cours
   border: 1px solid black;
   width: 90%;
   margin: 1%;
-  background-color: lightgrey;
+  background-color: darkblue;
 }
 .home .cours section article p {
   margin: 0.3rem;
   font-size: 1rem;
+  color: white;
 }
 .home .cours section article a {
   font-size: 2rem;
@@ -1211,6 +1212,10 @@ Listes des blocs par type de cours
     width: 29%;
     margin: 1%;
   }
+}
+
+.slide__info p {
+  color: white;
 }
 
 /* --------------------------------------------------------------------------

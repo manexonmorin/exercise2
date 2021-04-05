@@ -8,11 +8,11 @@ body.home{
     width: 100vw;
 
     @include tablet{
-        background-color: rgb(34,139,34);
+        background-color: rgb(19, 243, 19);
     }
 
     @include desktop{
-        background-color: rgb(34,139,34)
+        background-color: rgb(34,139,34);
     }
 
     // #primary{
@@ -155,11 +155,12 @@ Listes des blocs par type de cours
             border: 1px solid black;
             width: 90%;
             margin: 1%;
-            background-color: lightgrey;
+            background-color: darkblue;
     
             p{
                 margin: .3rem;
                 font-size: 1rem;
+                color: white;
             }
     
             a{
@@ -182,6 +183,12 @@ Listes des blocs par type de cours
                 margin: 1%;
             }
         }
+    }
+}
+
+.slide__info{
+    p{
+        color: white;
     }
 }
 
