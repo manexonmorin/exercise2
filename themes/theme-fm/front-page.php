@@ -10,46 +10,6 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
-	<section class="carrousel-2">
-			<article class="slide__conteneur">
-				<div class="slide">
-					
-					<img width="150" height="84" src="http://localhost/4w4/wp-content/uploads/2021/03/Python-Basics-Chapter-on-Web-Scraping_Watermarked.ad1bb89e800b.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-					<div class="slide__info">
-					<p>582-3W3 - Web-90h</p>
-					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-					<p>Session : 3</p>
-					
-					</div>
-				</div>
-			</article>
-
-			<article class="slide__conteneur">
-				<div class="slide">
-					
-					<img src="" alt="">
-					<div class="slide__info">
-					<p>582-3W3 - Web-90h</p>
-					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-					<p>Session : 3</p>
-					
-					</div>
-				</div>
-			</article>
-			
-			<article class="slide__conteneur">
-				<div class="slide">
-					
-					<img src="" alt="">
-					<div class="slide__info">
-					<p>582-3W3 - Web-90h</p>
-					<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-					<p>Session : 3</p>
-					
-					</div>
-				</div>
-			</article>
-		</section> 
 
 		<section class="ctrl-carrousel">
 			<input class="rad-carrousel" type="radio" name="rad-carrousel">
@@ -69,7 +29,6 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 			<section class="cours">
-			
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";
@@ -83,13 +42,18 @@ get_header();
 						</section> 
 					<?php endif?>
 				<h2><?php  echo $tPropriété['typeCours']; ?></h2>
-				<section>
+				<section class= "<?php echo($tPropriété['typeCours'] == "Web" ? 'class="carrousel-2"':''); ?>">
 				<?php endif?>
-				<?php get_template_part( 'template-parts/content', 'cours-article' );?>
-			<?php 
-			$precedent = $tPropriété['typeCours'];
-			endwhile;?>
+
+				<?php if ($tPropriété['typeCours']== "Web") : 
+					get_template_part( 'template-parts/content', 'cours-carrousel' );
+					else:
+					get_template_part( 'template-parts/content', 'cours-article' );
+					endif;
+				$precedent = $tPropriété['typeCours'];
+				endwhile;?>
 			</section> <!--Fin section cours-->
+
 		<?php endif;?>
 	</main><!-- #main -->
 

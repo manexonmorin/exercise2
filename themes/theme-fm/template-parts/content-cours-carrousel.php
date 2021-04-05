@@ -8,10 +8,14 @@
  */
 global $tPropriété;
 ?>
-	<!-- <?php //the_post_thumbnail('medium_large'); ?> -->
-<article>
-	
-	<p><?php echo $tPropriété['sigle'] . " - " . $tPropriété['typeCours'] . "-" . $tPropriété['nbHeure']; ?></p>
-	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['titrePartiel']; ?></a>
-	<p>Session : <?php echo $tPropriété['session']; ?></p>
+
+<article class="slide__conteneur">
+	<div class="slide">
+		<?php the_post_thumbnail('medium_large'); ?>
+		<div class="slide__info">
+			<p><?php echo $tPropriété['sigle'] . " - " . $tPropriété['typeCours'] . "-" . $tPropriété['nbHeure']; ?></p>
+			<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['titrePartiel']; ?></a>
+			<p>Session : <?php echo $tPropriété['session']; ?></p>
+		</div>
+	</div>
 </article>
