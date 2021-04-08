@@ -132,7 +132,9 @@ menu tablet
 		li:hover ul{
 			display : flex;
 			flex-direction: column;
+			justify-content: flex-start;
 			width : 400px;
+			animation: anim-sous-menu .5s both;
 		}
 
 	ul {
@@ -140,10 +142,20 @@ menu tablet
 		
 	}	
 	}
-
-
-
 }
+
+@keyframes anim-sous-menu{
+	0%{
+		opacity: 0;
+		transform: translateX(0) translateY(100px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0) translateY(0);
+	}
+}
+
 
 .comment-navigation,
 .posts-navigation,

@@ -784,11 +784,23 @@ menu tablet
 .main-navigation ul li:hover ul {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 400px;
+    animation: anim-sous-menu 0.5s both;
   }
   .main-navigation.toggled ul ul,
 .main-navigation ul ul {
     display: none;
+  }
+}
+@keyframes anim-sous-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }
 .site-main .comment-navigation,
