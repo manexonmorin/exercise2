@@ -1172,7 +1172,7 @@ Liste des blocs de cours par type_de_cours
 /* local slider
 --------------------------------------------- */
 .carrousel-2 {
-  width: 600vw;
+  width: 300vw;
   height: 30vh;
   display: flex;
   transition: transform 0.5s;
@@ -1183,7 +1183,7 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
 }
 .carrousel-2 .slide__conteneur .slide {
   width: 100%;
