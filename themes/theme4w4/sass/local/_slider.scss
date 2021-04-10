@@ -39,14 +39,15 @@
                 }
             }
             &:nth-of-type(1){
-                background-color: rgb(0, 255, 55);
+                background-color: white;
+                border: 3.5px solid violet;
             }
-            &:nth-of-type(2){
-                background-color: rgb(255, 157, 0);
-            }
-            &:nth-of-type(3){
-                background-color: rgb(0, 174, 255);
-            }
+            // &:nth-of-type(2){
+            //     background-color: rgb(255, 157, 0);
+            // }
+            // &:nth-of-type(3){
+            //     background-color: rgb(0, 174, 255);
+            // }
 
         }
         
@@ -62,6 +63,18 @@
     .rad-carrousel {
         display : block;
         margin : .5rem .8rem .5rem .8rem; 
+
+        &:nth-of-type(4){
+            display: none;
+        }
+
+        &:nth-of-type(5){
+            display: none;
+        }
+
+        &:nth-of-type(6){
+            display: none;
+        }
     }
 }
 
