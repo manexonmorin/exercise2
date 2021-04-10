@@ -1,10 +1,10 @@
 ---------------------- LIENS VERS MES PAGES GITHUB ET GITHUB PAGES ET WEBDEV---------------------------
 
 -_-:MON DÉPOT GITHUB
-https://github.com/manexonmorin/tp1
+https://github.com/manexonmorin/labo-7
 
 -_-:MA PAGE GITHUB PAGES
-https://manexonmorin.github.io/labo-6/
+https://manexonmorin.github.io/labo-7/
 
 ou
 

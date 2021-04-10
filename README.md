@@ -61,3 +61,22 @@ N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html apr�
 https://manexonmorin.github.io/labo-6/index.html
 /*--------------------------------- adresse webdev--------------------------*/
 https://e1937021.webdev.cmaisonneuve.qc.ca/4w4/
+
+
+////////////////////////////////////////////////////////////////////////////
+/* ---------------------------------------------------------------------- */
+////////////////////////////////////////////////////////////////////////////
+
+----------------------------------##LABO-7##--------------------------------------
+J'ai modifié la couleur des articles de la page.
+Le carrousel prend maintenant chaque section de la page
+Excepté pour le carroussel de Conception.
+
+/* ---------------------Adresse git hub LABO 7------------------------- 
+https://manexonmorin.github.io/labo-7/
+----------------------------------------------------------------------- */
+N.B: pour accéder à ma page avec cette adresse, il faut mettre index.html après le dernier « / » alors c'est comme ceci
+https://manexonmorin.github.io/labo-7/index.html
+/*--------------------------------- adresse webdev--------------------------*/
+https://e1937021.webdev.cmaisonneuve.qc.ca/4w4/
+P.S. J'épprouve de la difficulté avec mon Webdev, 
